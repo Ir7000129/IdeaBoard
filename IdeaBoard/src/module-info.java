@@ -8,4 +8,6 @@ module IdeaBoard {
 	requires javafx.web;
 	
 	opens com.IdeaBoard;
+	opens com.IdeaBoard.Controller;
+	opens com.IdeaBoard.View;
 }

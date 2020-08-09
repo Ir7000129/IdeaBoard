@@ -11,7 +11,7 @@ public class Launcher extends Application {
 		launch(args);
 	}
 	@Override
-	public void start (Stage primaryStage) {
+	public void start (Stage primaryStage) throws Exception{
 		var view = new ViewFactory();
 		view.showSplashScreen();
 	}
