@@ -4,12 +4,13 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane maxHeight="340.0" maxWidth="600.0" minHeight="-Infinity" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
-	<children>
-      <ImageView fitHeight="340.0" fitWidth="569.0" pickOnBounds="true" preserveRatio="true">
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="340.0" prefWidth="569.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.IdeaBoard.Controller.SplashController">
+   <children>
+      <ImageView fitHeight="340.0" fitWidth="569.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../../../Splash%20Screen%20Idea%20Board.png" />
          </image>
       </ImageView>
-	</children>
+   </children>
 </AnchorPane>

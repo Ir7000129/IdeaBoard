@@ -1,26 +1,44 @@
 package com.IdeaBoard.View;
 
 import javafx.stage.Stage;
-//import javafx.stage.StageStyle;
 import javafx.stage.StageStyle;
+import javafx.util.Duration;
 
 import java.io.IOException;
 
 import com.IdeaBoard.Controller.BaseController;
-import com.IdeaBoard.Controller.SplashController;
+import com.IdeaBoard.Controller.CreateWindowController;
 
+import javafx.animation.PauseTransition;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-//import javafx.scene.control.Label;
-//import javafx.scene.layout.Pane;
-//import javafx.scene.layout.VBox;
+
 
 public class ViewFactory {
+	public void showCreateScreen() throws Exception {
+		BaseController controller = new CreateWindowController(this, "CreateIdea.fxml");
+		showStage(controller);
+	}
+	
 	public void showSplashScreen() throws Exception {
-		BaseController con = new SplashController(this, "Splash.fxml");
-		showStage(con);
-		
+		var loader = new FXMLLoader(getClass().getResource("Splash.fxml"));
+		Parent root = loader.load();
+		var scene = new Scene(root);
+		var stage = new Stage();
+		stage.setScene(scene);
+		stage.initStyle(StageStyle.UNDECORATED);
+		stage.show();		
+		PauseTransition delay = new PauseTransition(Duration.seconds(3));
+		delay.setOnFinished(( event ) -> {
+			stage.close();
+			try {
+				showCreateScreen();
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		});
+		delay.play();
 	}
 	
 	public void showStage(BaseController controller) throws Exception {
@@ -42,19 +60,4 @@ public class ViewFactory {
 		}
 	}
 
-//	public void showSplashScreen() {
-//		
-//		var canvas = new Pane();
-//		var loader = new FXMLLoader();
-//		canvas.setPrefSize(600,500);
-////		var vbow = new VBox(new Label("A Label"));
-//		var scene = new Scene(canvas);
-//		
-//		Stage stage = new Stage();
-//		stage.initStyle(StageStyle.UNDECORATED);
-//		stage.setScene(scene);
-//		stage.setTitle("IdeaBoard");
-//		stage.showAndWait();
-//	}
-	
 
