@@ -55,9 +55,13 @@ public class ViewFactory {
 		var scene = new Scene(root);
 		var stage = new Stage();
 		stage.setScene(scene);
-		stage.initStyle(StageStyle.UNDECORATED);
+//		stage.initStyle(StageStyle.UNDECORATED);
 		stage.show();
 		}
+	
+	public void closeStage(Stage stage) {
+		stage.close();
+	}
 	}
 
 
