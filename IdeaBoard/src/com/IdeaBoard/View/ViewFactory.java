@@ -27,7 +27,7 @@ public class ViewFactory {
 		var scene = new Scene(root);
 		var stage = new Stage();
 		stage.setScene(scene);
-		stage.initStyle(StageStyle.UNDECORATED);
+		stage.initStyle(StageStyle.TRANSPARENT);
 		stage.show();		
 		PauseTransition delay = new PauseTransition(Duration.seconds(3));
 		delay.setOnFinished(( event ) -> {
@@ -55,13 +55,13 @@ public class ViewFactory {
 		var scene = new Scene(root);
 		var stage = new Stage();
 		stage.setScene(scene);
-//		stage.initStyle(StageStyle.UNDECORATED);
+		stage.initStyle(StageStyle.TRANSPARENT);
 		stage.show();
 		}
 	
 	public void closeStage(Stage stage) {
 		stage.close();
 	}
-	}
+}
 
 
