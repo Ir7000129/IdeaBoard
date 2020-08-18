@@ -55,7 +55,9 @@ public class ViewFactory {
 		var scene = new Scene(root);
 		var stage = new Stage();
 		stage.setScene(scene);
-		stage.initStyle(StageStyle.TRANSPARENT);
+//		stage.initStyle(StageStyle.TRANSPARENT);
+		stage.setMinHeight(600);
+		stage.setMinWidth(1000);
 		stage.show();
 		}
 	

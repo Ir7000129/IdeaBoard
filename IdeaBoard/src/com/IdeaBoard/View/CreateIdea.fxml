@@ -16,7 +16,7 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.Pane?>
 
-<AnchorPane minHeight="600.0" minWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <top>
@@ -51,7 +51,7 @@
                     <tabs>
                       <Tab text="Untitled Tab 1">
                         <content>
-                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="507.0" prefWidth="676.0" stylesheets="@../../../../../Desktop/Css/themeLight.css">
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="507.0" prefWidth="676.0">
                                  <children>
                                     <Accordion prefHeight="50.0" prefWidth="800.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                                       <panes>

@@ -4,7 +4,6 @@
     <list default="true" id="551f5539-7183-4970-8842-da339b77f0dc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../bin/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../bin/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/com/IdeaBoard/View/CreateIdea.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/com/IdeaBoard/View/CreateIdea.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/com/IdeaBoard/View/ViewFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/com/IdeaBoard/View/ViewFactory.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
