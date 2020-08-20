@@ -19,8 +19,6 @@ public class CreateWindowController extends BaseController{
 	@FXML
     private Label nameHandle;
     
-
-	
 	@FXML
     void closeMenuButton() {
 		var stage = (Stage)nameHandle.getScene().getWindow();
