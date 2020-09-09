@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <Pane maxHeight="-Infinity" minHeight="-Infinity" prefHeight="35.0" prefWidth="1000.0" style="-fx-background-color: #165e83;" BorderPane.alignment="TOP_LEFT">
+               <children>
+                  <MenuBar layoutY="7.0" prefHeight="22.0" prefWidth="190.0" style="-fx-background-color: #165e83;">
+                    <menus>
+                      <Menu mnemonicParsing="false" text="File">
+                        <items>
+                          <MenuItem mnemonicParsing="false" onAction="#closeMenuButton" text="Close" />
+                        </items>
+                      </Menu>
+                      <Menu mnemonicParsing="false" text="Edit">
+                        <items>
+                          <MenuItem mnemonicParsing="false" text="Delete" />
+                        </items>
+                      </Menu>
+                      <Menu mnemonicParsing="false" text="Help">
+                        <items>
+                          <MenuItem mnemonicParsing="false" text="About" />
+                        </items>
+                      </Menu>
+                    </menus>
+                  </MenuBar>
+               </children>
+            </Pane>
+         </top>
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <TabPane prefHeight="564.0" prefWidth="798.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <tabs>
+                      <Tab text="Untitled Tab 1">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="507.0" prefWidth="676.0">
+                                 <children>
+                                    <Accordion prefHeight="50.0" prefWidth="800.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                      <panes>
+                                        <TitledPane alignment="TOP_CENTER" animated="false" prefHeight="556.0" prefWidth="800.0" text="Project1" />
+                                      </panes>
+                                    </Accordion>
+                                    <Slider centerShape="false" layoutX="745.0" layoutY="342.0" orientation="VERTICAL" scaleShape="false" showTickMarks="true" snapToTicks="true" AnchorPane.bottomAnchor="53.0" AnchorPane.rightAnchor="29.0">
+                                       <effect>
+                                          <Shadow color="#5e5a5a" height="0.0" radius="0.0" width="0.24" />
+                                       </effect>
+                                       <cursor>
+                                          <Cursor fx:constant="V_RESIZE" />
+                                       </cursor>
+                                    </Slider>
+                                    <Label fx:id="nameHandle" layoutX="693.0" layoutY="496.0" text="Rogue 2020" AnchorPane.bottomAnchor="22.0" AnchorPane.rightAnchor="41.0" />
+                                 </children>
+                              </AnchorPane>
+                        </content>
+                      </Tab>
+                      <Tab text="Untitled Tab 2">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                        </content>
+                      </Tab>
+                    </tabs>
+                  </TabPane>
+               </children>
+            </AnchorPane>
+         </center>
+         <right>
+            <Pane prefHeight="565.0" prefWidth="0.0" visible="false" BorderPane.alignment="CENTER" />
+         </right>
+         <bottom>
+            <Pane prefHeight="0.0" prefWidth="1000.0" visible="false" BorderPane.alignment="CENTER" />
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>
