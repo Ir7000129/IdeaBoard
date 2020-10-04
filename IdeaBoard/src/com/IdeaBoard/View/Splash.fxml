@@ -9,7 +9,7 @@
    <children>
       <ImageView fitHeight="340.0" fitWidth="569.0" layoutX="16.0" layoutY="9.0" pickOnBounds="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <image>
-            <Image url="@../../../../Splash%20Screen%20Idea%20Board.png" />
+            <Image url="@../../../../Splash%20Screen%20Idea%20Boar.png" />
          </image>
          <cursor>
             <Cursor fx:constant="DISAPPEAR" />
