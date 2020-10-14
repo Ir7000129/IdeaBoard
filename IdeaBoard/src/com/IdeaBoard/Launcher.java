@@ -1,5 +1,5 @@
 package com.IdeaBoard;
-
+	
 import com.IdeaBoard.View.ViewFactory;
 
 import javafx.application.Application;
@@ -15,5 +15,5 @@ public class Launcher extends Application {
 		var view = new ViewFactory();
 		view.showSplashScreen();
 	}
-
+	
 }
